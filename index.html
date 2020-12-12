@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> JuJuBean Cupcake Queen</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/public.css">
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.min_1.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <link href="css/scroller_roll.css" rel="stylesheet" type="text/css"></link>
+        <script type="text/javascript" src="lib/scroller_roll.js"></script>
+
+
+
+
+      
+
+</head>
+
+<body ng-app="bakery" ng-strict-di>
+  <header>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-sm"> 
+        <ul class="navbar-nav mr-auto">
+           <a ui-sref="home"><img src="images/logo.png" alt="logo" id="logo"></a>
+        </ul>
+        <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item"> 
+                <a class="nav-link" ui-sref="menu"> 
+                  Menu 
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link" ui-sref="about"> 
+                  About
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+              <a class="nav-link" ui-sref="home"> 
+                Home
+              </a> 
+          </li> 
+        </ul> 
+    </nav> 
+</header>
+   
+    <div id="main">
+  
+        <ui-view>  </ui-view>
+        
+      </div>
+
+ <!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 mt-md-0 mt-3" id="footer_col_1">
+          <br>
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Hours:</h5>
+          <p>9:00 am to 8:00 pm Monday through Sunday</p>
+          <h5>Phone Number: 215-696-0708</h5>
+          <h5>Delivery Information:</h5>
+          <p>We deliver within 20 miles, $0.50 per mile.</p>
+  
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 mt-md-0 mt-3" id="footer_col_2">
+          <br><br><br>
+          <a href="https://www.facebook.com/jujubeancupcakequeen/?ref=page_internal" target="_blank"><img src="images/social-media/facebook-3-64.png"></a>
+          <a href="https://www.instagram.com/jujubeancupcakequeen/" target="_blank"><img src="images/social-media/instagram-64.png"></a>
+          <a href="#"><img src="images/social-media/email-64.png"></a>
+          </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3" id="footer_col_3">
+  
+          <!-- Content -->
+          <br><br>
+          <h5 class="text-uppercase font-weight-bold">Local cupcakes by occasion for all of your events in a range of flavors and designs. Homemade deliciousness that everyone will love and enjoy.</h5>
+         
+            
+            
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Text -->
+
+  
+  </footer>
+  <!-- Footer -->
+
+       
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+
+        <!--Main Bakery Module-->
+        <script src="src/bakery.module.js"></script>
+    
+
+        <script>
+
+          var slideIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+          }
+          
+          
+          </script>
+                  <script language="javascript" type="text/javascript">
+                    $(function() {
+                        $("#scroller_roll1").scroller_roll({
+                            title_show: 'disable',//enable  disable
+                            time_interval: '15',
+                            window_background_color: "#7E3F8F",
+                            window_padding: '1',
+                            border_size: '1',
+                            border_color: '#7E3F8F',
+                            images_width: '379',
+                            images_height: '400',
+                            images_margin: '40',
+                            title_size: '12',
+                            title_color: 'black',
+                            show_count: '5'
+                        });
+                    });
+                </script>
+</body>
+
+</html>

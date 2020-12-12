@@ -1,0 +1,165 @@
+
+.main-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 550px;
+    border: 8px solid #7E3F8F;
+    border-radius: 10%;
+
+}
+#menu img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 260px;  
+    border: 8px solid #7E3F8F;
+    border-radius: 10%;
+    
+}
+#menu h3 { 
+    position: absolute; 
+    top: 110px; 
+    left: 150px; 
+    width: 100%; 
+    font-size: 1cm;
+    font-weight: 900;
+    color:white;
+ }
+#menu img:hover{
+    border: 8px solid white;
+    border-radius: 10%;
+    opacity: 0.8;
+}
+
+
+#about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 260px;   
+    border: 8px solid #7E3F8F;
+    border-radius: 10%;
+}
+
+
+#about img:hover{
+    border: 8px solid white;
+    border-radius: 10%;
+    opacity: 0.8;
+}
+#about h3 { 
+    position: absolute; 
+    top: 110px; 
+    left: 150px; 
+    width: 100%; 
+    font-size: 1cm;
+    font-weight: 900;
+    color:white;
+ }
+body{
+    background-color:#FF87AB;
+    color: white;
+    font-family: 'Handlee', cursive;
+
+    
+}
+footer{
+    background-color: #7E3F8F;
+    height: 200px;
+}
+#footer_col_1 h5{
+    width: 600px;
+    padding-left: 100px;
+    font-size: 0.5cm;
+}
+#footer_col_1 p{
+    padding-left: 100px;
+    font-size: 0.3cm;
+}
+#footer_col_2 img{
+    width: 90px;
+    padding-left: 35px;
+}
+#footer_col_3 h5{
+    width: 600px;
+    float: right;
+    padding-right: 100px;
+    font-size: 0.5cm;
+    text-align: center;
+}
+
+header{
+    background-color: #7E3F8F;
+    height: 90px;
+    font-size: 0.7cm;
+    padding-right: 50px;
+}
+header a{
+    color: white;
+}
+header a:hover{
+    color:#FF87AB;
+}
+
+
+#logo{
+    width: 100px;
+    height: 70px;
+    padding-left: 20px;
+}
+.menu-item{
+    background-color: #7E3F8F;
+    padding: 5px 70px;
+    font-size: 0.5cm;
+    font-weight: 900;
+    margin-bottom:-30px;
+    
+    
+}
+.menu-item a{
+    color:white;
+}
+.menu-item:hover{
+    background-color: white;
+    color:#7E3F8F;
+
+}
+.menu-item a:hover{
+    color:#7E3F8F;
+}
+#menu-main{
+    background-color: white; 
+    color:#7E3F8F;
+    width: 720px;
+    margin: auto;
+}
+
+#about-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 600px;
+    border: 8px solid #7E3F8F;
+    border-radius: 10%;
+
+}
+#about h2{
+    width: 50%;
+    text-align: center;
+    margin:auto;
+
+}
+#note p{
+    width: 60%;
+    text-align: center;
+    margin:auto; 
+    font-size: 0.5cm;
+}
+
+
+

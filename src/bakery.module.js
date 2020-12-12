@@ -22,6 +22,10 @@
                 url: '/about',
                 templateUrl: 'src/about.html'
             })
+            .state('order',{
+                url: '/order',
+                templateUrl: 'src/order.html'
+            })
             .state('menu.cupcakes', {
                 url: '/cupcakes',
                 templateUrl: 'src/menu-categories/cupcakes.html'

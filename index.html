@@ -50,6 +50,11 @@
                 Home
               </a> 
           </li> 
+          <li class="nav-item"> 
+            <a class="nav-link" ui-sref="order"> 
+              Order
+            </a> 
+        </li> 
         </ul> 
     </nav> 
 </header>
@@ -122,25 +127,6 @@
         <script src="src/bakery.module.js"></script>
     
 
-        <script>
-
-          var slideIndex = 0;
-          carousel();
-          
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > x.length) {slideIndex = 1}
-            x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 4000); // Change image every 2 seconds
-          }
-          
-          
-          </script>
                   <script language="javascript" type="text/javascript">
                     $(function() {
                         $("#scroller_roll1").scroller_roll({
@@ -155,7 +141,7 @@
                             images_margin: '40',
                             title_size: '12',
                             title_color: 'black',
-                            show_count: '5'
+                            show_count: '4'
                         });
                     });
                 </script>
